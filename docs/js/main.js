@@ -31,3 +31,29 @@ function toggleMenu() {
     showMenu = false;
   }
 }
+
+// Lightbox stuff
+const lightbox = document.createElement("div");
+lightbox.id = "lightbox";
+document.body.appendChild(lightbox);
+
+const images = document.querySelectorAll("img");
+images.forEach(image => {
+  // Listens for clicks to activate the lightbox
+  image.addEventListener("click", e => {
+    lightbox.classList.add("active"); //adds the 'active' class
+    const img = document.createElement("img"); //new image variable created
+    img.src = image.src; //same as current
+    // One image at a time by removing the first child
+    while (lightbox.firstChild) {
+      lightbox.removeChild(lightbox.firstChild);
+    }
+    // adds to the lightbox
+    lightbox.appendChild(img);
+  });
+});
+
+lightbox.addEventListener("click", e => {
+  if (e.target !== e.currentTarget) return; // stops clicking on the image from exiting the lightbox
+  lightbox.classList.remove("active");
+});

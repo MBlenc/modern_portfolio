@@ -74,9 +74,10 @@
   }
 
   .projects {
-    grid-template-columns: repeat(2, 1fr); // 2 across on med screens
+    .grid {
+      grid-template-columns: repeat(2, 1fr); // 2 across on med screens
   }
-
+  }
   // Contacts
   .boxes {
     border: 0px;
@@ -101,9 +102,14 @@
   }
 
   .projects {
-    grid-template-columns: 1fr; // 1 across on small screens
-    img {
-      border: 0px;
+    .grid {
+      grid-template-columns: 1fr; // 1 across on small screens
+      align-items: center;
+    }
+
+    .grid img {
+      width: 100vw;
+      height: 100vw;
     }
   }
 }
