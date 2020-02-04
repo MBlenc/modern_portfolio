@@ -24,7 +24,7 @@ h3 {
   // & means same as h1.lg-heading etc.
   &.lg-heading {
     // a rem is basically a multiplier of the html tag's font size. Default is 16px. 6rem= 6*16px.
-    font-size: 6rem;
+    font-size: 5rem;
   }
 
   &.sm-heading {
@@ -78,6 +78,7 @@ main {
   }
 }
 
+// About Page
 .about-info {
   display: grid;
   grid-gap: 30px;
@@ -139,7 +140,7 @@ main {
   align-items: center;
   margin-top: 1rem;
 
-  div {
+  .details {
     font-size: 2rem;
     border: 3px #fff solid;
     padding: 1.5rem 2.5rem;

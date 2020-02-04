@@ -17,9 +17,15 @@
   main {
     align-items: center;
     text-align: center;
+    padding: 25vh 0;
     .lg-heading {
       line-height: 1;
       margin-bottom: 1rem;
+      font-size: 4rem;
+    }
+    .text-secondary {
+      font-size: 4rem;
+      text-align: center;
     }
   }
 
@@ -37,6 +43,8 @@
     height: 75;
     transform: translate3d(-100%, 0, 0);
     font-size: 24px;
+    justify-content: start;
+    padding: 2rem;
   }
 
   .menu-branding {
@@ -57,6 +65,18 @@
 
   .projects {
     grid-template-columns: repeat(2, 1fr); // 2 across on med screens
+  }
+
+  // Contacts
+  .boxes {
+    .details {
+      padding: 1fr;
+      // border: 3px;
+      font-size: 1.5rem;
+    }
+    .text-secondary {
+      font-size: 1.5rem;
+    }
   }
 }
 
