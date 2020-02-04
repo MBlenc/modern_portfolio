@@ -278,11 +278,13 @@ main {
     grid-template-columns: 1fr; }
   .projects {
     grid-template-columns: repeat(2, 1fr); }
-  .boxes .details {
-    padding: 1fr;
-    font-size: 1.5rem; }
-  .boxes .text-secondary {
-    font-size: 1.5rem; } }
+  .boxes {
+    border: 0px; }
+    .boxes .details {
+      border: 0px #fff solid;
+      font-size: 1.5rem; }
+    .boxes .text-secondary {
+      font-size: 1.5rem; } }
 
 @media screen and (max-width: 500px) {
   main#home h1 {

@@ -69,9 +69,10 @@
 
   // Contacts
   .boxes {
+    border: 0px;
     .details {
-      padding: 1fr;
-      // border: 3px;
+      // padding: ;
+      border: 0px #fff solid; //this is dumb
       font-size: 1.5rem;
     }
     .text-secondary {
