@@ -9,8 +9,8 @@
   },
   "devDependencies": {},
   "scripts": {
-    "sass": "node-sass -w scss/ -o dist/css --recursive",
-    "deploy": "gh-pages -d dist"
+    "sass": "node-sass -w scss/ -o docs/css --recursive",
+    "deploy": "gh-pages -d docs"
   },
   "author": "Marlon Blencowe",
   "license": "ISC"
