@@ -110,7 +110,7 @@ body {
       width: 100%;
       height: 100%;
       z-index: -1;
-      background: rgba(192, 192, 192, 0.9); }
+      background: rgba(192, 192, 192, 0); }
 
 h1,
 h2,
@@ -127,8 +127,7 @@ h3 {
   h3.sm-heading {
     margin-bottom: 2rem;
     padding: 0.2 1rem;
-    text-align: right;
-    background: rgba(197, 197, 197, 0.5); }
+    text-align: right; }
 
 a {
   color: #fff;
@@ -197,7 +196,7 @@ main {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  align-items: center;
+  align-items: right;
   margin-top: 1rem; }
   .boxes .details {
     font-size: 2rem;
@@ -252,15 +251,21 @@ main {
     main .lg-heading {
       line-height: 1;
       margin-bottom: 1rem;
-      font-size: 4rem; }
+      font-size: 4rem;
+      text-align: center; }
+    main .sm-heading {
+      text-align: center; }
     main .text-secondary {
       font-size: 4rem;
+      text-align: center; }
+    main .icons {
       text-align: center; }
   ul.menu-nav,
   div.menu-branding {
     float: none;
     width: 100%;
-    min-height: 0; }
+    min-height: 0;
+    text-align: center; }
     ul.menu-nav.show,
     div.menu-branding.show {
       transform: translate3d(0, 0, 0); }
@@ -269,7 +274,8 @@ main {
     transform: translate3d(-100%, 0, 0);
     font-size: 24px;
     justify-content: start;
-    padding: 2rem; }
+    text-align: center;
+    padding: 0; }
   .menu-branding {
     height: 25vh;
     transform: translate3d(100%, 0, 0); }
@@ -290,4 +296,6 @@ main {
   main#home h1 {
     margin-top: 10vh; }
   .projects {
-    grid-template-columns: 1fr; } }
+    grid-template-columns: 1fr; }
+    .projects img {
+      border: 0px; } }
