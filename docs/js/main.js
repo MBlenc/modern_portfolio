@@ -32,7 +32,7 @@ function toggleMenu() {
   }
 }
 
-// Lightbox stuff
+// Lightbox stuff for gallery
 const lightbox = document.createElement("div");
 lightbox.id = "lightbox";
 document.body.appendChild(lightbox);
