@@ -1,5 +1,30 @@
+// Remember to "npm run sass"
 @import "config"; //imports our variables
 @import "menu";
+// Import fonts
+@import url("https://fonts.googleapis.com/css?family=Muli|Quattrocento&display=swap");
+// Font?
+@font-face {
+  font-family: "wremenabold";
+  src: url("webfonts/wremena_bold-webfont.woff2") format("woff2"),
+    url("wremena-webfonts/wremena_bold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "wremenaregular";
+  src: url("webfonts/wremena_regular-webfont.woff2") format("woff2"),
+    url("wremena_regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "wremenalight";
+  src: url("webfonts/wremena_light-webfont.woff2") format("woff2"),
+    url("webfonts/wremena_light-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
 
 * {
   box-sizing: border-box;
@@ -11,7 +36,8 @@ body {
   color: set-text-color($primary-color); // apply the set-text color function
   height: 100%;
   margin: 0;
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-family: wremenalight, "Quattrocento", serif;
+  // font-family: wremenabold, "Quattrocento", serif;
   line-height: 1.5;
 }
 
@@ -21,6 +47,7 @@ h2,
 h3 {
   margin: 0;
   font-weight: 400;
+  font-family: wremenabold, "Quattrocento", serif;
   // & means same as h1.lg-heading etc.
   &.lg-heading {
     // a rem is basically a multiplier of the html tag's font size. Default is 16px. 6rem= 6*16px.
@@ -118,16 +145,16 @@ main {
 }
 
 // Work/Projects
-.projects {  
+.projects {
   .grid {
-  display: grid;
-  grid-template-columns: repeat(3, 200px);
-  justify-content: center;
-  align-content: center;
-  grid-gap: 10px;
-  // height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(3, 200px);
+    justify-content: center;
+    align-content: center;
+    grid-gap: 10px;
+    // height: 100vh;
   }
-  
+
   .grid img {
     width: 200px;
     height: 200px;
