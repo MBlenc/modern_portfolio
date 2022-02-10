@@ -5,7 +5,7 @@
   "main": "index.js",
   "homepage": "MBlenc.github.io/modern_portfolio",
   "dependencies": {
-    "node-sass": "^4.13.1"
+    "node-sass": "^7.0.0"
   },
   "devDependencies": {},
   "scripts": {
